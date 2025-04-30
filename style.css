@@ -1,0 +1,333 @@
+/* Fonts 
+
+Trade Gothic Next LT Pro Light
+font-family: "trade-gothic-next", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Trade Gothic Next LT Pro Regular
+font-family: "trade-gothic-next", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Trade Gothic Next LT Pro Italic
+font-family: "trade-gothic-next", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+Trade Gothic Next LT Pro Bold
+font-family: "trade-gothic-next", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Trade Gothic Next LT Pro Bold Italic
+font-family: "trade-gothic-next", sans-serif;
+font-weight: 700;
+font-style: italic; 
+
+
+
+Span Light
+font-family: "span", serif;
+font-weight: 300;
+font-style: normal;
+
+
+Span Light Italic
+font-family: "span", serif;
+font-weight: 300;
+font-style: italic;
+
+
+Span Regular
+font-family: "span", serif;
+font-weight: 400;
+font-style: normal;
+
+
+Span Italic
+font-family: "span", serif;
+font-weight: 400;
+font-style: italic;
+
+
+Span Bold
+font-family: "span", serif;
+font-weight: 700;
+font-style: normal;
+
+
+Span Bold Italic
+font-family: "span", serif;
+font-weight: 700;
+font-style: italic;
+
+
+Span Compressed Regular
+font-family: "span-compressed", serif;
+font-weight: 400;
+font-style: normal;
+
+Span Compressed Regular Italic
+font-family: "span-compressed", serif;
+font-weight: 400;
+font-style: italic;
+*/
+
+body { 
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 153px; /* spacing between icon and title */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.nav-icon {
+    width: 170px;  /* or adjust to your actual PNG size */
+    height: auto;
+}
+
+.nav-title {
+    font-family: "span", serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    line-height: 1.4;
+}
+
+.nav-title .italic {
+    font-style: italic;
+}
+
+
+#info-image-container,
+#info-text-container {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Start hidden */
+}
+
+#info-image,
+#info-text {
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* everything for timeline */ 
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.year-box {
+    font-family: "span", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Color classes */
+.pink {
+    background-color: #FDD1F0;
+}
+
+.yellow {
+    background-color: #FDF69C;
+}
+
+.green {
+    background-color: #B3E45F;
+}
+
+.orange {
+    background-color: #FBB274;
+}
+
+.year-box:hover {
+    box-shadow: 0 0 20px 5px white;
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* img that appears on hover */
+
+#hover-image-container {
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    max-width: 30vw;
+    max-height: 80vh;
+    display: none;
+    z-index: 10;
+  }
+  
+  #hover-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+}
+
+/* all for text that appears */ 
+
+#text-info-container {
+    position: fixed;
+    top: 200px; /* adjust so it's below your navbar */
+    right: 5%;
+    width: 30vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    /* background-color: white; */
+    padding: 15px;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+    display: none;
+    z-index: 10;
+  }
+  
+  #text-info-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: "span", serif;
+    font-weight: 700;
+    font-style: italic; 
+  }
+  
+  #text-info-container p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #ffffff;
+    font-family: "trade-gothic-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+/*
+body.homepage {
+    flex-direction: column;
+}
+*/
+/*
+.year-list {
+    height: 80vh;
+    padding: 600px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+  
+
+.year {
+    color: palevioletred;
+    font-size: 4em;
+    font-weight: bold;
+
+    transition: transform 0.3s ease, color 0.3s ease; 
+    cursor: default;
+}
+
+.year:hover {
+    transform: scale(1.2); 
+    color: hotpink;
+}
+
+
+.floating-info {
+    display: none;
+    position: absolute;
+    left: -450px; 
+    top: 50%;
+    transform: translateY(-50%);
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+
+    animation: float 3s infinite alternate;
+}
+
+.floating-info img {
+    max-width: 150px;
+    height: auto;
+}
+
+.floating-info p {
+    margin: 0;
+    font-size: 1.5rem;
+    max-width: 150px;
+}
+
+
+.year:hover .floating-info {
+    display: block;
+}
+
+
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #99c34f;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+h1 {
+    color: #99c34f;
+    font-size: 2em;
+    font-family: "trade-gothic-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: #99c34f;
+    font-size: 2em;
+    font-family: "span", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+} */
