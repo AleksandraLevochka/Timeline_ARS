@@ -43,10 +43,13 @@ const yearImages = {
   1910: "images/1910.png",
   1919: "images/1919.jpg",
   1935: "images/1935.png",
+  1970: "images/1970.jpg",
   1976: "images/1976.png",
   1980: "images/1980.png",
+  1996: "images/1996.png",
+  2001: "images/2001.png",
   // ... continue mapping for each year
-  2025: "images/2025.jpg"
+  2025: "images/2025.png"
 };
 
 const textInfoContainer = document.getElementById('text-info-container');
@@ -94,6 +97,12 @@ The masthead is ornate, displaying the newspaper’s original name in a bold, cl
     body: `The New York Times began incorporating photography more prominently, shifting the balance of text and image to create a more visually engaging experience for its readers. This change reflected the growing influence of photojournalism, as the paper recognized the power of images to convey complex stories and evoke emotional responses. By integrating photographs alongside articles, The Times enhanced its storytelling, offering readers a richer, more immersive way to engage with the news. This shift marked a turning point in newspaper design, setting the stage for the greater visual emphasis seen in modern journalism.`
   },
 
+  1970: {
+    title: "Guy Bourdin’s Stylistic Photography",
+    titleColor: "#FDF69C",
+    body: `Guy Bourdin’s  images epitomize the era’s visual storytelling  — vibrant, surreal compositions challenging traditional advertising aesthetics.`
+  },
+
   1976: {
     title: "Back to 6-column TNYT",
     titleColor: "#FDD1F0",
@@ -104,6 +113,24 @@ The masthead is ornate, displaying the newspaper’s original name in a bold, cl
     title: "TNYT shifts from hand-set type to digital typesetting",
     titleColor: "#FDD1F0",
     body: `In 1980, The New York Times made a groundbreaking shift from hand-set type to digital typesetting, marking a major advancement in newspaper production. This transition to digital technology streamlined the printing process, allowing for faster production times, greater accuracy, and more flexibility in layout design. It also paved the way for more sophisticated typographic choices and improved editorial control. The move to digital typesetting represented a significant milestone in the modernization of the newspaper industry, enabling The Times to keep pace with evolving technological innovations in publishing.`
+  },
+
+  1996: {
+    title: "TNYT Launches Its First Website",
+    titleColor: "#FDD1F0",
+    body: `The early web version was visually cluttered, mimicking print but squeezed into a screen format. Fonts were inconsistent, pages were packed with links and headlines—a digital abundance of navigation and noise.3. Design was function-first, reflecting the awkward growing pains of moving print ideas into digital formats.`
+  },
+
+  2001: {
+    title: "TNYT Breaking News Reporting",
+    titleColor: "#FDD1F0",
+    body: `The Times website became vastly more responsive to breaking news than its original iterations -- and if necessary, scrapped its homepage clutter when major news erupted.`
+  },
+
+  2025: {
+    title: "TNYT Current Website (2025)",
+    titleColor: "#FDD1F0",
+    body: `The current design of The New York Times website feels thoughtful and human-centered, balancing dense information with clarity and visual ease. Its use of clean typography, generous spacing, and subtle grid structures creates an experience that’s both readable and refined. What stands out is how seamlessly it blends storytelling with interactive and visual elements—something I’m also trying to achieve in my project.`
   },
   
 };
