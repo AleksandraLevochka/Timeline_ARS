@@ -42,6 +42,7 @@ const yearImages = {
   1908: "images/1908.jpg",
   1910: "images/1910.png",
   1919: "images/1919.jpg",
+  1920: "images/1920.png",
   1935: "images/1935.png",
   1970: "images/1970.jpg",
   1976: "images/1976.png",
@@ -57,6 +58,12 @@ const textTitle = document.getElementById('text-title');
 const textBody = document.getElementById('text-body');
 
 const yearTextInfo = {
+  1440: {
+    title: "The Gutenberg Press",
+    titleColor: "#FDF69C",
+    body: `Invention of the printing press marked the beginning of mass communication and print abundance.`
+  },
+  
   1851: {
     title: "First issue of The New York Times",
     titleColor: "#FDD1F0",
@@ -79,16 +86,34 @@ The masthead is ornate, displaying the newspaper’s original name in a bold, cl
     body: `The first issue of Harper's Bazar was published on November 2, 1867, introducing American readers to a weekly magazine devoted to fashion, culture, and the domestic arts. Aimed primarily at women, the publication offered a sophisticated blend of European fashion plates, household advice, serialized fiction, and social commentary. Published by Harper & Brothers, it quickly distinguished itself with its elegant illustrations and editorial tone that combined refinement with practical guidance. This debut marked a significant moment in American publishing, shaping women’s media for generations to come.`
   },
 
+  1900: {
+    title: "Early 20th Century advertising",
+    titleColor: "#FBB274",
+    body: `Ads of that era embraced Art Nouveau, and heavily relied on hand-drawn illustrations.`
+  },
+
   1905: {
     title: "First Photo in The New York Times",
     titleColor: "#FDD1F0",
     body: `The first photograph ever published in The New York Times appeared on June 8, 1905, marking a pivotal moment in the history of journalism. The image, a stark contrast to the paper's traditionally text-heavy layout, was of a train wreck in Ohio, highlighting the paper’s growing interest in incorporating visuals to complement its news coverage. This photograph not only represented a technological advancement but also set the stage for photojournalism’s increasing role in modern newspapers, offering readers a more immediate and impactful way to engage with current events.`
   },
 
+  1908: {
+    title: " 'Ornament and Crime'  published by Adolph Loos",
+    titleColor: "#B3E45F",
+    body: `Essay arguing that ornamentation in design and architecture is unnecessary and wasteful. This marks a turning point in design philosophy`
+  },
+
   1910: {
     title: "Back to 8-column TNYT",
     titleColor: "#FDD1F0",
     body: `In the 1910s, The New York Times transitioned to an 8-column format, a design change aimed at maximizing content density while enhancing the paper’s overall efficiency. This shift allowed for more stories to be included on each page, accommodating the growing demand for detailed news coverage. The 8-column layout improved the organization of content, making it easier for readers to navigate and absorb information.`
+  },
+
+  1920: {
+    title: "Art Deco Rises!",
+    titleColor: "#FBB274",
+    body: `During the Art Deco era, design became more geometric and streamlined, yet remained visually rich. Bold typography and symmetrical layouts brought a sense of modernity and elegance, blending ornament with clarity across ads and editorial design.`
   },
 
   1935: {
