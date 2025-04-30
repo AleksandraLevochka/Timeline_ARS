@@ -27,7 +27,7 @@ const yearBoxes = document.querySelectorAll('.year-box');
 const hoverImageContainer = document.getElementById('hover-image-container');
 const hoverImage = document.getElementById('hover-image');
 
-// Map years to image paths
+// connecting years to images 
 const yearImages = {
   1440: "images/1440.png",
   1837: "images/1837.jpg",
@@ -63,6 +63,12 @@ const yearTextInfo = {
     titleColor: "#FDF69C",
     body: `Invention of the printing press marked the beginning of mass communication and print abundance.`
   },
+
+  1837: {
+    title: "The beginning: Victorian-era Marketing and Design",
+    titleColor: "#FDF69C",
+    body: `Designs flourish with elaborate typography and ornamental details.`
+  },
   
   1851: {
     title: "First issue of The New York Times",
@@ -86,10 +92,28 @@ The masthead is ornate, displaying the newspaper’s original name in a bold, cl
     body: `The first issue of Harper's Bazar was published on November 2, 1867, introducing American readers to a weekly magazine devoted to fashion, culture, and the domestic arts. Aimed primarily at women, the publication offered a sophisticated blend of European fashion plates, household advice, serialized fiction, and social commentary. Published by Harper & Brothers, it quickly distinguished itself with its elegant illustrations and editorial tone that combined refinement with practical guidance. This debut marked a significant moment in American publishing, shaping women’s media for generations to come.`
   },
 
+  1896: {
+    title: "Harper's Bazar Cover ",
+    titleColor: "#FBB274",
+    body: `March 28, 1896 issue, illustrated by William H. Bradley.`
+  },
+
+  1897: {
+    title: "'Monaco - Monte Carlo' by Alphonse Mucha",
+    titleColor: "#FDF69C",
+    body: `An example of the intricate, decorative style of Art Nouveau, a hallmark of abundance in print design.`
+  },
+
   1900: {
     title: "Early 20th Century advertising",
     titleColor: "#FBB274",
     body: `Ads of that era embraced Art Nouveau, and heavily relied on hand-drawn illustrations.`
+  },
+
+  1901: {
+    title: "The end: Victorian-era Marketing and Design",
+    titleColor: "#FBB274",
+    body: `The end of the Victorian era marked a turning point in marketing and design, as ornate, elaborate visuals gave way to more structured and modern aesthetics. With the rise of mass production and consumer culture, design began to shift from purely decorative to more strategic and persuasive.`
   },
 
   1905: {
@@ -108,6 +132,12 @@ The masthead is ornate, displaying the newspaper’s original name in a bold, cl
     title: "Back to 8-column TNYT",
     titleColor: "#FDD1F0",
     body: `In the 1910s, The New York Times transitioned to an 8-column format, a design change aimed at maximizing content density while enhancing the paper’s overall efficiency. This shift allowed for more stories to be included on each page, accommodating the growing demand for detailed news coverage. The 8-column layout improved the organization of content, making it easier for readers to navigate and absorb information.`
+  },
+
+  1919: {
+    title: "The Beginning: The Bauhaus Movement",
+    titleColor: "#B3E45F",
+    body: `Bauhaus introduced minimalism, influencing editorial layouts but clashing with more ornate traditions in design`
   },
 
   1920: {
